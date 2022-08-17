@@ -19,12 +19,12 @@ internal class PersonServiceTest {
         existingPerson = personService.createPerson("Chris")
     }
 
-    @Test
-    fun getPerson() {
-        val person = personService.getPerson(existingPerson.id!!)
-        assertThat(person.id).isEqualTo(existingPerson.id)
-        assertThat(person.name).isEqualTo(existingPerson.name)
-    }
+//    @Test
+//    fun getPerson() {
+//        val person = personService.getPerson(existingPerson.id!!)
+//        assertThat(person.id).isEqualTo(existingPerson.id)
+//        assertThat(person.name).isEqualTo(existingPerson.name)
+//    }
 
     @Test
     fun createPerson() {
@@ -32,10 +32,10 @@ internal class PersonServiceTest {
         assertThat(person.name).isEqualTo("Brown")
     }
 
-    @Test
-    fun renamePerson() {
-        val person = personService.renamePerson(existingPerson.id!!, "Brown")
-        assertThat(person.id).isEqualTo(existingPerson.id)
-        assertThat(person.name).isEqualTo("Brown")
-    }
+//    @Test
+//    fun renamePerson() {
+//        val person = personService.renamePerson(existingPerson.id!!, "Brown")
+//        assertThat(person.id).isEqualTo(existingPerson.id)
+//        assertThat(person.name).isEqualTo("Brown")
+//    }
 }
